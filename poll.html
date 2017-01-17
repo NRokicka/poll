@@ -5,6 +5,69 @@
     <title>Poll</title>
 </head>
 <body>
-    
+    <fieldset><legend>THE CAR OF YOUR DREAMS</legend>
+        <form id="contact" action="https://formspree.io/natalia9rokicka@gmail.com"
+      method="post">
+           <label>Car brand
+           <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="jeep">Jeep</option>
+                <option value="bmv">BMW</option>
+                <option value="honda">Honda</option>
+            </select>
+            </label>
+            <label>Other
+                <input type="text" name="other" id="other">
+            </label>
+            <br><br>
+            <label>Choose a color<br>
+                <input type="radio" name="color" value="red" checked>red<br>
+                <input type="radio" name="color" value="blue">blue<br>
+                <input type="radio" name="color" value="black">black<br>
+                <input type="radio" name="color" value="white">white<br>
+                <input type="radio" name="color" value="other">other
+            </label>
+            <br><br>
+            <label>Car plates number:
+                <input type="text" name="CarPlatsName" required pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}" title="Car plates number" placeholder="AA2233AA">
+            </label>
+            <br><br>
+            <fieldset>
+                <legend>WRITE YOUR COMMENTS</legend> 
+            <textarea name="textarea" rows="5" cols="100"></textarea>
+            </fieldset><br>
+            <fieldset>  
+                <legend>PERSONAL DATA</legend>
+                    <label>Gender:<br>
+                        <input type="checkbox" name="gender" value="male">Male<br>
+                        <input type="checkbox" name="gender" value="female">Female
+                    </label><br><br>
+                    <label>Date of births:<br>
+                        <input type="text" name="DateOfBirthse" title="Date of births" placeholder="mm/dd/yyyy">
+                    </label>
+                    <br>
+                    <label>First name:<br>
+                        <input type="text" name="fname" id="fname" required>
+                    </label>
+                    <br>
+                    <label>Last name:<br>
+                        <input type="text" name="lname" id="lname" required>
+                    </label>
+                    <br>
+                    <label>Your url:<br>
+                        <input type="text" name="url">
+                    </label>
+                   <br>
+                    <label>Your phone:<br>
+                        <input type="text" name="phone">
+                    </label>
+            </fieldset><br><br>
+           <input type="submit" value="Send">
+        </form>
+    </fieldset>
 </body>
 </html>
